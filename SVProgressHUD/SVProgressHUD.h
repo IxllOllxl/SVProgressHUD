@@ -77,6 +77,9 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 @property (assign, nonatomic) BOOL hapticsEnabled;      // default is NO
 @property (assign, nonatomic) BOOL motionEffectEnabled; // default is YES
 
+@property (nonatomic, strong) UIView * _Nonnull backgroundView;
+
++ (SVProgressHUD*_Nonnull)sharedView;
 + (void)setDefaultStyle:(SVProgressHUDStyle)style;                      // default is SVProgressHUDStyleLight
 + (void)setDefaultMaskType:(SVProgressHUDMaskType)maskType;             // default is SVProgressHUDMaskTypeNone
 + (void)setDefaultAnimationType:(SVProgressHUDAnimationType)type;       // default is SVProgressHUDAnimationTypeFlat
